@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   movements.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: engiacom <engiacom@student.42perpignan.    +#+  +:+       +#+        */
+/*   By: nitadros <nitadros@student.42perpignan.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/20 23:38:55 by engiacom          #+#    #+#             */
-/*   Updated: 2025/09/28 22:24:38 by engiacom         ###   ########.fr       */
+/*   Updated: 2025/09/28 22:28:22 by nitadros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,7 +54,6 @@ typedef struct s_mouse
 }	t_mouse;
 
 int		key_press(int key, t_data *data);
-int		close_window(void *data);
 int		key_release(int keycode, t_data *data);
 int		handle_keypress(int keycode, t_data *data);
 int		check_angle(t_data *data);
@@ -63,5 +62,6 @@ int		go_left(t_data *d);
 int		go_up(t_data *d);
 int		go_down(t_data *d);
 void	screen(t_data *data);
+int		close_window(void *data);
 
 #endif
